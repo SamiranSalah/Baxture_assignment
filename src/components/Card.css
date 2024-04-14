@@ -1,0 +1,80 @@
+.card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 8px;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 300px; /* You can adjust the width as needed */
+  aspect-ratio: 3 / 4; /* Sets the width to height ratio */
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto 10px;
+}
+
+.full-name {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.follow-button,
+.delete-button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.follow-button:hover,
+.delete-button:hover {
+  background-color: #388e3c;
+}
+
+.App-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjusts the spacing between cards */
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    width: 45%; /* Adjust based on your design preference */
+  }
+}
+
+@media (min-width: 1025px) {
+  .card {
+    width: 300px; /* Fixed width on larger screens */
+  }
+}
